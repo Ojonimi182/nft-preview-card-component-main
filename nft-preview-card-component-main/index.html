@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; color: aliceblue; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    body {
+      background-color:  hsl(217, 54%, 11%);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .container-fluid{
+      background: hsl(216, 50%, 16%);
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0 1px 2px;
+      margin-top: -40px;
+      max-width: 260px;
+      margin: 50px auto;
+    }
+    
+    .right {
+      display: flex;
+      color: hsl(178, 100%, 50%);
+    }
+
+    .left {
+      display: flex;
+      color: hsl(0, 0%, 100%);
+    }
+    
+    .content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 13px;
+    }
+
+    .buttom {
+      display: flex;
+      margin-top: 13px;
+    }
+    .image {
+      position: relative;
+      display: inline-block; 
+    }
+
+    .icon {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; /* Make the width of the icon's background match the image */
+      height: 100%; /* Make the height of the icon's background match the image */
+      background-color: hsl(178, 100%, 50%);
+      opacity: 0;
+      display: flex;
+      justify-content: center; /* Center the icon horizontally */
+      align-items: center; /* Center the icon vertically */
+    }
+
+    .image:hover .icon {
+      display: flex; /* Display the icon when container is hovered on */
+      opacity: 0.8;
+    }
+
+    .image img{
+      width: 260px;
+      height: 260px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    
+    .text {
+      color: hsl(0, 0%, 100%);
+      margin-top: 15px;
+    }
+    .text-1 a{
+      text-decoration: none;
+      cursor: pointer;
+      color: hsl(0, 0%, 100%);
+    }
+
+    .text-1 a:hover{
+      color:hsl(178, 100%, 50%);
+    }
+    .pic img{
+      height: 30px;
+      width: 30px;
+      border: 1.3px solid;
+      border-color: aliceblue;
+      border-radius: 50px;
+    }
+    .text-2 {
+      opacity: 0.8;
+      margin-top: 12px;
+    }
+    .text-pic p {
+      color: hsl(0, 0%, 100%);
+      opacity: 0.8;
+      margin-left: 8px;
+      margin-top: 5px;
+    }
+
+    .text-pic a {
+      text-decoration: none;
+      color: hsl(0, 0%, 100%);
+    }
+    .text-pic a:hover {
+      color: hsl(178, 100%, 50%);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container-fluid">
+    <div class="image">
+      <a href="#"><img src="./images/image-equilibrium.jpg"></a>
+      <div class="icon"><img style="height: 50px; width: 50px;" src="./images/icon-view.svg"></div>
+    </div>
+    <div class="text">
+      <div class="text-1">
+        <a href="#"><h3>Equilibrium #3429</h3></a>
+      </div>
+      <div class="text-2">
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+    </div>
+    
+    <div class="content">
+      <div class="right">
+        <img src="./images/icon-ethereum.svg">
+        <p style="opacity: 0.8; margin-left: 5px;">0.041 ETH</p>
+      </div>
+      <div class="left">
+        <img src="./images/icon-clock.svg">
+        <p style="opacity: 0.8; margin-left: 5px;">3 days left</p> 
+      </div>
+    </div> 
+    <hr style="margin-top: 10px;">
+    <div class="buttom">
+      <div class="pic">
+        <img src="./images/image-avatar.png">
+      </div>
+      <div class="text-pic">
+        <p>Creation of <a href="#">Jules Wyvern</a></p>
+      </div>
+    </div> 
+  </div>
+
+  
+
+  
+  
+  
+  
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/talent-profile">Samuel Ojonimi Joshua</a>.
+  </div>
+</body>
+</html>
